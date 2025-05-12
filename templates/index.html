@@ -3,19 +3,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Secrets</title>
-    <link rel="stylesheet" href={% static "index.css"%} type="text/css" />
+    <title>Секреты</title>
+    <link rel="stylesheet" href={% static "styles.css"%} type="text/css" />
 </head>
 <body>
-    <div class="title-secret">
-        Create your secret
-    </div>
+    <label class="title-secret">
+        Напиши пароль, секретное сообщение или ссылку снизу.
+    </label>
     <form method="post" class="container">
+        <textarea name="secret" maxlength=5000 required rows='8' cols='50' spellcheck="false"
+                  placeholder="Пиши здесь..."></textarea>
         <div>
-            <textarea name="secret" maxlength=5000 required rows='8' cols='50' spellcheck="false"
-                      placeholder="Print your secret here..."></textarea>
-            <button class="cr-btn" type="submit" >Create link</button>
+            <input name="passphrase" type="password" placeholder="Введи Пароль">
+            <!-- здесь будет чекбокс для скрытия -->
+            <select name="expires_in" class="select-expires-in">
+                <!-- value в секундах -->
+                <option value="60">Через 1 минуту</option>
+                <option value="300">Через 5 минут</option>
+                <option value="1800">Через 30 минут</option>
+                <option value="3600">Через 1 час</option>
+                <option value="14400">Через 4 часа</option>
+                <option value="43200">Через 12 часов</option>
+                <option value="86400" selected>Через 1 день</option>
+                <option value="259200">Через 3 дня</option>
+                <option value="604800">Через 7 дней</option>
+            </select>
         </div>
+
+
+        <button class="cr-btn" type="submit" >Создать ссылку</button>
     </form>
 </body>
 </html>

@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Secrets</title>
-    <link rel="stylesheet" href={% static "styles.css"%} type="text/css" />
+    <link rel="stylesheet" href={% static "index.css"%} type="text/css" />
 </head>
 <body>
     <div class="title-secret">
         Create your secret
     </div>
-    <form method="post">
+    <form method="post" class="container">
         <div>
-            <textarea name="secret" maxlength=5000 required rows='8' cols='50' spellcheck="false" placeholder="Print your secret here..."></textarea>
-        </div>
-        <div class="create-button">
-            <button type="submit" >Create link</button>
+            <textarea name="secret" maxlength=5000 required rows='8' cols='50' spellcheck="false"
+                      placeholder="Print your secret here..."></textarea>
+            <button class="cr-btn" type="submit" >Create link</button>
         </div>
     </form>
 </body>

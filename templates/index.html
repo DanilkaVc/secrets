@@ -13,21 +13,27 @@
     <form method="post" class="container">
         <textarea name="secret" maxlength=5000 required rows='8' cols='50' spellcheck="false"
                   placeholder="Пиши здесь..."></textarea>
-        <div>
-            <input name="passphrase" type="password" placeholder="Введи Пароль">
+        <div class="options-container">
+            <div class="option-field">
+                <h3>Пароль:</h3>
+                <input id="passphrase" name="passphrase" type="password" placeholder="Введи Пароль">
+            </div>
             <!-- здесь будет чекбокс для скрытия -->
-            <select name="expires_in" class="select-expires-in">
-                <!-- value в секундах -->
-                <option value="60">Через 1 минуту</option>
-                <option value="300">Через 5 минут</option>
-                <option value="1800">Через 30 минут</option>
-                <option value="3600">Через 1 час</option>
-                <option value="14400">Через 4 часа</option>
-                <option value="43200">Через 12 часов</option>
-                <option value="86400" selected>Через 1 день</option>
-                <option value="259200">Через 3 дня</option>
-                <option value="604800">Через 7 дней</option>
-            </select>
+            <div class="option-field">
+                <h3>Сгорит через:</h3>
+                <select id="expires_in" name="expires_in">
+                    <!-- value в секундах -->
+                    <option value="60">Через 1 минуту</option>
+                    <option value="300">Через 5 минут</option>
+                    <option value="1800">Через 30 минут</option>
+                    <option value="3600">Через 1 час</option>
+                    <option value="14400">Через 4 часа</option>
+                    <option value="43200">Через 12 часов</option>
+                    <option value="86400" selected>Через 1 день</option>
+                    <option value="259200">Через 3 дня</option>
+                    <option value="604800">Через 7 дней</option>
+                </select>
+            </div>
         </div>
 
 

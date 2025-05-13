@@ -4,15 +4,6 @@ body {
 	font-family: palatino;
 }
 
-textarea {	
-	color: white;
-	margin-top: 1em;
-	resize: none;
-	width: 100%;
-	height: 150px;
-	font-size: 20px;
-	background: #232323;
-}
 
 .title-secret {
 	font-size: 35px;
@@ -22,6 +13,54 @@ textarea {
 	margin-right: auto;
 }
 
+.container {
+    width: 100%;
+    min-width: 100px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.container textarea {
+	color: white;
+	margin-top: 1em;
+	resize: none;
+	width: 100%;
+	height: 200px;
+	font-size: 20px;
+	background: #232323;
+}
+
+.options-container {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+
+.option-field {
+    flex: 1;
+    font-size: 20px;
+    color: white;
+}
+
+.option-field h3 {
+    width: 100%;
+    min-width: 30px;
+    max-width: 320px;
+    margin: 0 0 10px auto;
+    color: white;
+}
+
+.option-field input,
+.option-field select {
+    color: white;
+    background: #232323;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: none;
+    font-size: 20px;
+}
+
 .cr-btn {
     margin: 10px 0;  
     padding: 0 15px;
@@ -29,7 +68,7 @@ textarea {
     text-align: left;  
     width: 100%;
     min-width: 100px;  
-    max-width: 500px;  
+    max-width: 700px;
     height: 40px;  
     border: none !important;  
     border-radius: 10px;  
@@ -42,17 +81,3 @@ textarea {
     outline: none;
 }
 
-.container {
-    width: 100%;
-    min-width: 100px;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.password {
-    
-}
-
-.expires-in select{
-
-}

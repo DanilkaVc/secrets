@@ -74,10 +74,12 @@ body {
     border-radius: 10px;  
     text-decoration: none;  
     color: white;  
-    background: #ff2525 !important;  
+    background: #f70202;  
     box-sizing: border-box;  
     display: block;  
     cursor: pointer;
     outline: none;
 }
 
+.cr-btn:hover {
+    background: #cf0000;
